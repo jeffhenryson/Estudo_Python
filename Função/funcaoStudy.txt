@@ -1,0 +1,44 @@
+~ O Que é Uma Função? ~
+
+-
+• Uma função é um bloco de código que é projetado para realizar uma tarefa específica. 
+Em Python, você define uma função usando a palavra-chave def, seguida de um nome para a função,
+parênteses () que podem conter alguns parâmetros, e um bloco de código indentado que será executado 
+quando a função for chamada.
+
+~ Como e Para Que Usar Funções ~ 
+
+-
+• Reusabilidade de Código: Se você se encontra escrevendo o mesmo código mais de uma vez, 
+provavelmente esse código deveria estar em uma função. Funções permitem que você escreva o 
+código uma vez e o reutilize em diferentes partes do seu programa chamando a função.
+
+• Organização do Código: Funções ajudam a organizar seu programa em blocos de código que realizam 
+tarefas específicas, tornando o código mais fácil de entender e manter.
+
+• Divisão de Problemas Complexos: Decompor um problema complexo em partes menores e gerenciáveis 
+pode ser feito definindo funções para cada sub-tarefa.
+-
+Exemplo 1: Definindo e Chamando uma Função Simples:
+
+    def saudar():
+        print("Olá, bem-vindo ao aprendizado de funções!")
+
+    saudar()  # Chama a função e imprime: Olá, bem-vindo ao aprendizado de funções!
+-
+Exemplo 2: Função com Parâmetros:
+
+    def saudar_pessoa(nome):
+        print(f"Olá, {nome}!")
+
+    saudar_pessoa("Maria")  # Chama a função com o argumento "Maria"
+-
+Exemplo 3: Função com Parâmetros e Retorno:
+        
+        def somar(a, b):
+        return a + b
+
+            resultado = somar(5, 3)
+            print(resultado)  # Imprime: 8
+-
+

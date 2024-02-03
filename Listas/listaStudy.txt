@@ -1,0 +1,129 @@
+~ Criando uma Lista ~
+
+-
+• Uma lista é definida colocando todos os seus itens (elementos) dentro de colchetes [], separados por
+vírgulas.
+
+ex:
+minha_lista = [1, "Hello", 3.14]
+-
+
+~ Apagando um Item Específico de uma Lista ~
+
+-
+• Para remover um item específico de uma lista, você pode usar o método remove(x), 
+onde x é o item que você deseja remover. Se o item estiver presente na lista mais de uma vez, 
+apenas a primeira ocorrência do item será removida.
+
+Ex:
+cores = ['vermelho', 'verde', 'azul']
+cores.remove('verde')                     # Remove 'verde' da lista
+print(cores)                              # Saída: ['vermelho', 'azul']
+-
+
+~ Exibindo a Lista em Ordem Inversa ~
+
+-
+• Você pode inverter a ordem dos itens de uma lista chamando o método reverse().
+
+Ex:
+numeros = [1, 2, 3, 4, 5]
+numeros.reverse()
+print(numeros)  # Saída: [5, 4, 3, 2, 1]
+
+• Uma alternativa para não alterar a lista original é usar o slicing:
+
+Ex:
+print(numeros[::-1])  # Saída: [1, 2, 3, 4, 5], se a lista original foi invertida previamente
+-
+
+~ Substituindo Algo em uma Lista ~
+
+-
+• Para substituir um elemento em uma lista, você precisa acessar o elemento pelo índice e atribuir
+um novo valor a ele. Os índices em Python começam em 0, então o primeiro elemento da lista tem
+índice 0, o segundo tem índice 1, e assim por diante.
+
+Ex:
+animais = ['cachorro', 'gato', 'pássaro']
+animais[0] = 'lobo'  # Substitui 'cachorro' por 'lobo'
+print(animais)  # Saída: ['lobo', 'gato', 'pássaro']
+-
+
+~ Iteração em Listas ~
+
+-
+• Iterar sobre uma lista é uma maneira de acessar cada item na lista sequencialmente. 
+Isso pode ser feito usando um loop for.
+
+Exemplo:
+frutas = ["maçã", "banana", "cereja"]
+for fruta in frutas:
+    print(fruta)
+-
+
+~ Compreensões de Lista (List Comprehensions) ~
+
+-
+• Compreensões de lista são uma maneira concisa de criar listas. Elas permitem que você gere novas
+listas aplicando uma expressão a cada item em uma sequência existente, tudo isso em uma única
+linha clara.
+
+Exemplo:
+# Criar uma lista dos quadrados de números de 0 a 9
+quadrados = [x**2 for x in range(10)]
+print(quadrados)
+-
+
+~ Ordenação de Listas ~
+
+-
+• Você pode ordenar uma lista em Python usando o método sort() para ordenação in-place 
+(modifica a lista original) ou a função sorted() para retornar uma nova lista ordenada,
+ deixando a original intocada.
+
+Exemplo:
+
+numeros = [3, 1, 4, 1, 5, 9, 2]
+numeros.sort()
+print(numeros)  # In-place
+
+numeros_original = [3, 1, 4, 1, 5, 9, 2]
+numeros_ordenados = sorted(numeros_original)
+print(numeros_ordenados)  # Nova lista
+
+~ Busca em Listas ~ 
+
+-
+• Buscar por um item em uma lista pode ser feito usando o método index(), que retorna o índice do 
+primeiro elemento com o valor especificado.
+
+Exemplo: 
+index_do_item = frutas.index("banana")
+-
+
+~ Filtragem em Listas ~
+
+-
+• Você pode filtrar elementos de uma lista com base em condições,
+usando compreensões de lista ou a função filter().
+
+Exemplo com compreensão de lista:
+# Filtrar números ímpares da lista
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+impares = [x for x in numeros if x % 2 != 0]
+print(impares)
+
+~ Ordenação Personalizada ~ 
+
+-
+• Para ordenar a lista pelo comprimento das palavras, você deve usar o argumento key 
+do método sort(). O key permite especificar uma função (ou qualquer chamável) que será 
+chamada em cada elemento antes de fazer comparações. O método reverse() inverte a lista,
+mas não ajuda a ordená-la pelo comprimento das palavras.
+
+Exemplo: 
+palavras = ["banana", "pera", "maçã", "cereja"]
+palavras.sort(key=len)  # Ordena as palavras pelo comprimento
+print(palavras)
+
