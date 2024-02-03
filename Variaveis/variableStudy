@@ -1,0 +1,54 @@
+~ O Que São Variáveis? ~
+
+-
+• Variáveis são espaços na memória do computador onde você pode armazenar dados. 
+Pense nelas como caixas em um armazém, onde cada caixa pode conter algo diferente, 
+mas cada uma tem seu próprio rótulo único para que você possa encontrar o que está procurando 
+sem ter que abrir todas as caixas.
+
+Em Python, você usa variáveis para armazenar informações que deseja acessar ou modificar mais 
+tarde no seu código. Cada variável tem um nome (o rótulo da caixa) e um valor (o conteúdo da caixa).
+
+~ Declarando Variáveis ~
+
+-
+• Em Python, você não precisa declarar explicitamente uma variável antes de usá-la ou definir seu tipo. Você cria uma variável no momento em que atribui um valor a ela pela primeira vez. A atribuição é feita com o sinal de igual (=).
+
+Exemplo:
+    minha_variavel = 10
+    (Neste exemplo, minha_variavel é uma variável cujo valor é 10.)
+
+~ Tipos de Dados ~
+
+-
+• O valor de uma variável pode ser de diferentes tipos, dependendo do que você precisa armazenar. Os tipos de dados mais comuns em Python incluem:
+
+• Inteiros (int): Números sem parte decimal, como -3, 0, 42.
+• Números de ponto flutuante (float): Números com parte decimal, como 3.14, -0.001.
+• Strings (str): Texto, como "olá", "Python é divertido!".
+• Booleanos (bool): Verdadeiro (True) ou falso (False).
+
+Exemplo: 
+    idade = 30              # int
+    altura = 1.75           # float
+    nome = "Alice"          # str
+    programador = True      # bool
+
+~ Reatribuindo Variáveis ~ 
+
+-
+• Você pode mudar o valor de uma variável simplesmente atribuindo um novo valor a ela.
+
+Exemplo: 
+    idade = 30
+    idade = 31  # Agora, idade é 31
+
+~ Nomes de Variáveis ~
+
+-
+• Os nomes das variáveis em Python devem começar com uma letra ou um underscore (_) e podem conter letras, números e underscores (mas não podem começar com um número). Python diferencia maiúsculas de minúsculas, então minhaVariavel é diferente de minhavariavel.
+
+
+
+
+
